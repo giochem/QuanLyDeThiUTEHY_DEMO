@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{924D3E8C-226C-46EA-92C6-921385480E0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\BaoCaoThongKe_Admin_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\BaoCaoThongKe_Admin_GUI.Designer.cs">
+      <DependentUpon>BaoCaoThongKe_Admin_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Cau Hoi\QuanLyCauHoi_Admin_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Cau Hoi\QuanLyCauHoi_Admin_GUI.Designer.cs">
+      <DependentUpon>QuanLyCauHoi_Admin_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Quan Ly De Thi\QuanLyChiTietDeThi_Admin_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Quan Ly De Thi\QuanLyChiTietDeThi_Admin_GUI.Designer.cs">
+      <DependentUpon>QuanLyChiTietDeThi_Admin_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Khoa\QuanLyLop_Admin_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Khoa\QuanLyLop_Admin_GUI.Designer.cs">
+      <DependentUpon>QuanLyLop_Admin_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Khoa\QuanLyKhoa_Admin_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Khoa\QuanLyKhoa_Admin_GUI.Designer.cs">
+      <DependentUpon>QuanLyKhoa_Admin_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Mon Hoc\QuanLyChiTietMonHoc_Admin_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Mon Hoc\QuanLyChiTietMonHoc_Admin_GUI.Designer.cs">
+      <DependentUpon>QuanLyChiTietMonHoc_Admin_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Quan Ly De Thi\QuanLyDeThi_Admin_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Quan Ly De Thi\QuanLyDeThi_Admin_GUI.Designer.cs">
+      <DependentUpon>QuanLyDeThi_Admin_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Mon Hoc\QuanLyMonHoc_Admin_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Mon Hoc\QuanLyMonHoc_Admin_GUI.Designer.cs">
+      <DependentUpon>QuanLyMonHoc_Admin_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Nguoi Dung\ChucNangQuanLyNguoiDung_Admin_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Nguoi Dung\ChucNangQuanLyNguoiDung_Admin_GUI.Designer.cs">
+      <DependentUpon>ChucNangQuanLyNguoiDung_Admin_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Nguoi Dung\QuanLySinhVien_Admin_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Nguoi Dung\QuanLySinhVien_Admin_GUI.Designer.cs">
+      <DependentUpon>QuanLySinhVien_Admin_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Nguoi Dung\QuanLyAdmin_Admin_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Quan Ly Nguoi Dung\QuanLyAdmin_Admin_GUI.Designer.cs">
+      <DependentUpon>QuanLyAdmin_Admin_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThongKeDiemThi_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ThongKeDiemThi_GUI.Designer.cs">
+      <DependentUpon>ThongKeDiemThi_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TrangChu_Admin_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\TrangChu_Admin_GUI.Designer.cs">
+      <DependentUpon>TrangChu_Admin_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DangNhap_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\DangNhap_GUI.Designer.cs">
+      <DependentUpon>DangNhap_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinhVien\DeThi_SinhVien_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinhVien\DeThi_SinhVien_GUI.Designer.cs">
+      <DependentUpon>DeThi_SinhVien_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinhVien\DiemThi_SinhVien_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinhVien\DiemThi_SinhVien_GUI.Designer.cs">
+      <DependentUpon>DiemThi_SinhVien_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinhVien\Thi_SinhVien_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinhVien\Thi_SinhVien_GUI.Designer.cs">
+      <DependentUpon>Thi_SinhVien_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinhVien\TrangChuNguoiDung_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinhVien\TrangChuNguoiDung_GUI.Designer.cs">
+      <DependentUpon>TrangChuNguoiDung_GUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\BaoCaoThongKe_Admin_GUI.resx">
+      <DependentUpon>BaoCaoThongKe_Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Quan Ly Cau Hoi\QuanLyCauHoi_Admin_GUI.resx">
+      <DependentUpon>QuanLyCauHoi_Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Quan Ly De Thi\QuanLyChiTietDeThi_Admin_GUI.resx">
+      <DependentUpon>QuanLyChiTietDeThi_Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Quan Ly Khoa\QuanLyKhoa_Admin_GUI.resx">
+      <DependentUpon>QuanLyKhoa_Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Quan Ly Khoa\QuanLyLop_Admin_GUI.resx">
+      <DependentUpon>QuanLyLop_Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Quan Ly Mon Hoc\QuanLyChiTietMonHoc_Admin_GUI.resx">
+      <DependentUpon>QuanLyChiTietMonHoc_Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Quan Ly De Thi\QuanLyDeThi_Admin_GUI.resx">
+      <DependentUpon>QuanLyDeThi_Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Quan Ly Mon Hoc\QuanLyMonHoc_Admin_GUI.resx">
+      <DependentUpon>QuanLyMonHoc_Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Quan Ly Nguoi Dung\ChucNangQuanLyNguoiDung_Admin_GUI.resx">
+      <DependentUpon>ChucNangQuanLyNguoiDung_Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Quan Ly Nguoi Dung\QuanLyAdmin_Admin_GUI.resx">
+      <DependentUpon>QuanLyAdmin_Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Quan Ly Nguoi Dung\QuanLySinhVien_Admin_GUI.resx">
+      <DependentUpon>QuanLySinhVien_Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ThongKeDiemThi_GUI.resx">
+      <DependentUpon>ThongKeDiemThi_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\TrangChu_Admin_GUI.resx">
+      <DependentUpon>TrangChu_Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\DangNhap_GUI.resx">
+      <DependentUpon>DangNhap_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SinhVien\DeThi_SinhVien_GUI.resx">
+      <DependentUpon>DeThi_SinhVien_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinhVien\DiemThi_SinhVien_GUI.resx">
+      <DependentUpon>DiemThi_SinhVien_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinhVien\Thi_SinhVien_GUI.resx">
+      <DependentUpon>Thi_SinhVien_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinhVien\TrangChuNguoiDung_GUI.resx">
+      <DependentUpon>TrangChuNguoiDung_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_truong.png" />
+    <Content Include="Resources\Setup.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{728f2e27-ef14-4da3-8545-d87b21a9953a}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{3c29b31d-b54a-49bc-a94f-c22ccc0727b4}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
